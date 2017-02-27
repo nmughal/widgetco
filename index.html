@@ -12,11 +12,12 @@
 
     <body>
       <header class='widgetheader'>
-        <img src='black-geometric.jpg' alt='Black geometric background'>
+        <body id='image' src='black-geometric.jpg' alt='Black geometric background'>
+
         <h1>Widget Co</h1>
         <h2>The Best Widgets</h2>
-        <h3>We have the best widgets. They're amazing. You'll love them.</h3>
-        <h4>Place Your Order Now!</h4>
+        <p>We have the best widgets. They're amazing. You'll love them.</h3>
+        <h4>Place Your Order Now!</p>
       </header>
       <main>
         <h1>Leading Producer of Widgets</h1>
@@ -49,12 +50,60 @@
       </section>
       <section class='order'>
         <h1>Place Your Order</h1>
+        <fieldset>
+          <legend>Items Details</legend>
+          <aside>
+            <label for='item-type'>Item Type</label>
+            <select name='itemtype' id='item-type'>
+              <option value=''></option>
+              <option value='greatwidget'>Great Widget</option>
+              <option value='awesomewidget'>Awesome Widget</option>
+              <option value='widgetofcool'>Widget of Cool</option>
+              <option value='amazingwidget'>Amazing Widget</option>
+              <option value='widgetsweetness'>Widget Sweetness</option>
+            </select>
+          </aside>
+          <aside>
+            <label for='quantity'>Quantity</label>
+            <input type='number' name='quantity' id='quantity' min="1">
+          </aside>
+          <aside>
+            <label class="giftwrap">
+              <label for='gift-wrap'>Gift wrap?</label>
+              <input type='checkbox' name='gift-wrap' value='no'>
+              No
+            </label>
+            <label class="checkbox">
+              <input type='checkbox' name='gift-wrap' value='yes'>
+              Yes
+            </label>
+          </aside>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Info</legend>
+          <aside>
+            <label for='name'>Full Name</label>
+            <input type='text' class='name' name='name' id='name' placeholder='Jordan Kasper'>
+          </aside>
+          <aside>
+            <label for='email'>Email</label>
+            <input type='email' class='email' name='email' id='email' placeholder='jordan@joe.com' required>
+          </aside>
+          <aside>
+            <label for='credit-card'>Credit Card</label>
+            <input type='creditcard' name='creditcard' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx'>
+          </aside>
+          <aside>
+            <label for='expiration'>Expiration</label>
+            <input type='month' class='expiration' id='expiration' placeholder='February 2017'>
+            </textarea>
+          </aside>
+        </fieldset>
       </section>
       <footer>
         <p>&copy; 2017 The Iron Yard Students</p>
       </footer>
 
-
-            
     </body>
 </html>
